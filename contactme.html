@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(23, 10, 207, 0.019);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 28px;
+            color: #3A0A70;
+            position;
+        }
+        fieldset {
+            background-color: #BC06E0;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            font-size: 18px;
+            color: #FFF;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #3A0A70;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #540AA4;
+        }
+        center {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Contact Me</b></h1>
+    <fieldset>
+        <form action="msg.html">
+            <label for="Name">Name</label>
+            <input type="text" id="FirstName" name="FirstName" required placeholder="Your First name">
+            <input type="text" id="LastName" name="LastName" required placeholder="Your Last name"><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="EX: example@gmail.com">
+            <label for="Country">Country</label>
+            <input type="text" id="Country" name="Country" required placeholder="EX: India">
+            <label for="Message">Message</label>
+            <input type="text" id="Message" name="Message" required>
+            <center>
+                <input type="submit">
+            </center>
+        </form>
+    </fieldset>
+</body>
+</html>
